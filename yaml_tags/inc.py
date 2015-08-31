@@ -34,7 +34,3 @@ class IncTag(BaseTag):
         loader = self.inc_file_loader or type(loader)
         with open(path) as f:
             return yaml.load(f, loader)
-
-# pip 已安装上，通过 config_manager 测试看看能不能正常运行
-
-# 考虑加一个强制目录限定。只能使用相对目录，且总是使用指定了的相对目录
