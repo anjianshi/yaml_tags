@@ -15,8 +15,6 @@ class IncTag(BaseTag):
         self.inc_file_loader = inc_file_loader
 
     def parse(self, loader, node):
-        # 取不到文件名时，拿什么作为相对路径？可以使用 getpwd()
-
         if not isinstance(node.value, str):
             raise TagParseError("yaml tag !inc 的值必须是字符串(got {})".format(node.value))
 
