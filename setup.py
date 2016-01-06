@@ -7,7 +7,7 @@ except ImportError:
 
 setup(
     name='yaml_tags',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/anjianshi/yaml_tags',
     license='MIT',
     author='anjianshi',
