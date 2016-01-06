@@ -24,7 +24,8 @@ class IncTag(BaseTag):
             if not os.path.isabs(path) and os.path.isfile(loader.name)
             else ""
         )
-        path = os.path.abspath(os.path.join(base, path))
+
+        path = os.path.abspath(base + "/" + path)
 
         if not os.path.isfile(path):
             raise TagParseError("yaml tag !inc 指定的文件不存在: {}".format(path))
